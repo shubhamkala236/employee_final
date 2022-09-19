@@ -107,7 +107,7 @@ class EmployeeRepository {
 	//         }
 	//    }
 	async Employees(queryStr) {
-		const resultPerPage = 10;
+		const resultPerPage = 1000;
 		const pageNumber = queryStr.page;
 		try {
 			const apiFeatures = new ApiFeatures(
