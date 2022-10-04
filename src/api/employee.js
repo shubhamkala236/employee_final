@@ -53,7 +53,6 @@ module.exports = (app, channel) => {
 					panNumber,
 					bankAccountNumber,
 					ifsc,
-					passBookNumber,
 					role,
 					designation,
 					password,
@@ -71,7 +70,6 @@ module.exports = (app, channel) => {
 					panNumber,
 					bankAccountNumber,
 					ifsc,
-					passBookNumber,
 					role,
 					designation,
 					password,id})
@@ -86,7 +84,6 @@ module.exports = (app, channel) => {
 					panNumber,
 					bankAccountNumber,
 					ifsc,
-					passBookNumber,
 					role,
 					designation,
 					password,
@@ -139,7 +136,6 @@ module.exports = (app, channel) => {
 				const panNumber = data.panNumber;
 				const bankAccountNumber = data.bankAccountNumber;
 				const ifsc = data.ifsc;
-				const passBookNumber = data.passBookNumber;
 				const designation = data.designation;
 				const status = data.status;
 				const imageUrl = data.imageUrl;
@@ -162,7 +158,6 @@ module.exports = (app, channel) => {
 					panNumber,
 					bankAccountNumber,
 					ifsc,
-					passBookNumber,
 					designation,
 					status,
 					imageUrl,
@@ -209,7 +204,6 @@ module.exports = (app, channel) => {
 				panNumber,
 				bankAccountNumber,
 				ifsc,
-				passBookNumber,
 				role,
 				designation,
 				status,
@@ -234,7 +228,6 @@ module.exports = (app, channel) => {
 				panNumber,
 				bankAccountNumber,
 				ifsc,
-				passBookNumber,
 				role,
 				designation,
 				status,
@@ -361,7 +354,6 @@ module.exports = (app, channel) => {
 					panNumber: req.body.panNumber,
 					bankAccountNumber: req.body.bankAccountNumber,
 					ifsc: req.body.ifsc,
-					passBookNumber: req.body.passBookNumber,
 					dateOfJoining: req.body.dateOfJoining,
 				};
 				const Id = req.user._id;
@@ -520,7 +512,6 @@ module.exports = (app, channel) => {
 					panNumber: req.body.panNumber,
 					bankAccountNumber: req.body.bankAccountNumber,
 					ifsc: req.body.ifsc,
-					passBookNumber: req.body.passBookNumber,
 					designation: req.body.designation,
 					// password:req.body.password,
 					role: req.body.role,

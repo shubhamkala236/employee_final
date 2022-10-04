@@ -34,7 +34,6 @@ class EmployeeService {
       panNumber,
       bankAccountNumber,
       ifsc,
-      passBookNumber,
       role,
       designation,
       password,
@@ -63,7 +62,7 @@ class EmployeeService {
         panNumber,
         bankAccountNumber,
         ifsc,
-        passBookNumber,
+        Number,
         role,
         designation,
         password: userPassword,
@@ -117,7 +116,6 @@ class EmployeeService {
       panNumber,
       bankAccountNumber,
       ifsc,
-      passBookNumber,
       role,
       designation,
       status,
@@ -143,7 +141,6 @@ class EmployeeService {
       panNumber: panNumber,
       bankAccountNumber: bankAccountNumber,
       ifsc: ifsc,
-      passBookNumber: passBookNumber,
       designation: designation,
       // password: userPassword,
       // salt: salt,
@@ -218,7 +215,6 @@ class EmployeeService {
             panNumber: existingUser.panNumber,
             bankAccountNumber: existingUser.bankAccountNumber,
             ifsc: existingUser.ifsc,
-            passBookNumber: existingUser.passBookNumber,
             designation: existingUser.designation,
             imageUrl: existingUser.imageUrl,
             status: existingUser.status,
@@ -451,7 +447,6 @@ class EmployeeService {
       bankAccountNumber,
       dateOfJoining,
       ifsc,
-      passBookNumber,
       }=newUserData;
 
     // const uploaded = await cloudinary.uploader.upload(imageUrl.tempFilePath);
@@ -468,7 +463,6 @@ class EmployeeService {
       bankAccountNumber: bankAccountNumber,
       dateOfJoining:dateOfJoining,
       ifsc:ifsc,
-      passBookNumber:passBookNumber,
       // imageUrl: newUrl,
     };
 

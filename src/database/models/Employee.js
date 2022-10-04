@@ -65,10 +65,7 @@ const EmployeeSchema = new Schema({
         maxlength: [11, "Should be at max 11 digit"],
         minlength: [11, "Should be at least 11 digit"],
     },
-    passBookNumber:{
-        type: Number,
-        required: true,
-    },
+   
     role:{
         type:String,
         default:"user"
