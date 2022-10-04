@@ -48,7 +48,7 @@ const EmployeeSchema = new Schema({
         minlength: [12, "Should be 12 digit"],
     },
     panNumber:{
-        type: Number,
+        type: String,
         required: true,
         maxlength: [10, "Should be 10 digit"],
         minlength: [10, "Should be 10 digit"],
@@ -60,10 +60,8 @@ const EmployeeSchema = new Schema({
         minlength: [9, "Should be at least 9 digit"],
     },
     ifsc:{
-        type: Number,
-        required: true,
-        maxlength: [11, "Should be at max 11 digit"],
-        minlength: [11, "Should be at least 11 digit"],
+        type: String,
+        required: true
     },
    
     role:{
